@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+.vercel
+*.log
+__pycache__/
+*.pyc
+content/raw-home-*.html
+content/home-paragraphs.json

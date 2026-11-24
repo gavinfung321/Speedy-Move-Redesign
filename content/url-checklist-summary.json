@@ -1,0 +1,57 @@
+{
+  "export": "WordPress.2026-11-24.xml",
+  "pages_and_posts": 308,
+  "published_pages": 246,
+  "published_posts": 59,
+  "category_archives": 5,
+  "by_status": {
+    "publish": 305,
+    "draft": 3
+  },
+  "published_pages_by_language": {
+    "en": 192,
+    "zh": 54
+  },
+  "published_posts_by_language": {
+    "en": 53,
+    "zh": 6
+  },
+  "published_by_template": {
+    "company": 11,
+    "homepage": 2,
+    "core-service": 4,
+    "moving": 8,
+    "demolition": 9,
+    "location": 146,
+    "item-service": 65,
+    "legal": 1,
+    "article": 59
+  },
+  "duplicate_published_paths": [],
+  "in_export_not_in_sitemap": [],
+  "in_sitemap_not_in_export": [],
+  "unclassified_published": [],
+  "unpublished": [
+    {
+      "path": "/",
+      "title": "Household Furniture Disposal",
+      "status": "draft",
+      "language": "en",
+      "post_type": "page"
+    },
+    {
+      "path": "/zh/",
+      "title": "清拆服務 (backup)",
+      "status": "draft",
+      "language": "zh",
+      "post_type": "page"
+    },
+    {
+      "path": "/zh/",
+      "title": "搬屋 (For backup)",
+      "status": "draft",
+      "language": "zh",
+      "post_type": "page"
+    }
+  ]
+}

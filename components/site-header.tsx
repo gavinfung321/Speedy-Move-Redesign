@@ -1,0 +1,211 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { chineseMenu, mainMenu, type MenuItem } from "@/lib/menus";
+import { site } from "@/lib/site";
+
+const itemClass = "text-[var(--ink)] hover:text-[var(--orange)]";
+
+function HongKongFlag() {
+  return (
+    <svg viewBox="0 0 60 40" className="h-5 w-8" aria-hidden="true">
+      <rect width="60" height="40" fill="#DE2910" />
+      <g fill="#fff" transform="translate(30 20)">
+        <path d="M0 1.8c1.8 0 3.4-1.6 4.4-4.6 1.2-3.8-.6-8.4-4.4-10.2-3.8 1.8-5.6 6.4-4.4 10.2 1 3 2.6 4.6 4.4 4.6z" />
+        <path d="M0 1.8c1.8 0 3.4-1.6 4.4-4.6 1.2-3.8-.6-8.4-4.4-10.2-3.8 1.8-5.6 6.4-4.4 10.2 1 3 2.6 4.6 4.4 4.6z" transform="rotate(72)" />
+        <path d="M0 1.8c1.8 0 3.4-1.6 4.4-4.6 1.2-3.8-.6-8.4-4.4-10.2-3.8 1.8-5.6 6.4-4.4 10.2 1 3 2.6 4.6 4.4 4.6z" transform="rotate(144)" />
+        <path d="M0 1.8c1.8 0 3.4-1.6 4.4-4.6 1.2-3.8-.6-8.4-4.4-10.2-3.8 1.8-5.6 6.4-4.4 10.2 1 3 2.6 4.6 4.4 4.6z" transform="rotate(216)" />
+        <path d="M0 1.8c1.8 0 3.4-1.6 4.4-4.6 1.2-3.8-.6-8.4-4.4-10.2-3.8 1.8-5.6 6.4-4.4 10.2 1 3 2.6 4.6 4.4 4.6z" transform="rotate(288)" />
+        <circle r="2.4" fill="#DE2910" />
+        <circle r="1.15" />
+      </g>
+    </svg>
+  );
+}
+
+function UkFlag() {
+  return (
+    <svg viewBox="0 0 60 30" className="h-5 w-8" aria-hidden="true">
+      <rect width="60" height="30" fill="#012169" />
+      <path d="M0 0 L60 30 M60 0 L0 30" stroke="#fff" strokeWidth="8" />
+      <path d="M0 0 L60 30 M60 0 L0 30" stroke="#C8102E" strokeWidth="4" />
+      <path d="M30 0 V30 M0 15 H60" stroke="#fff" strokeWidth="12" />
+      <path d="M30 0 V30 M0 15 H60" stroke="#C8102E" strokeWidth="7" />
+    </svg>
+  );
+}
+
+function LanguageSwitch({ chinese }: { chinese: boolean }) {
+  return (
+    <Link
+      href={chinese ? "/" : "/zh/首頁/"}
+      aria-label={chinese ? "English" : "中文"}
+      className="inline-flex overflow-hidden rounded-[2px] ring-1 ring-black/20"
+    >
+      {chinese ? <UkFlag /> : <HongKongFlag />}
+    </Link>
+  );
+}
+
+function DesktopItems({ items, linkClass }: { items: MenuItem[]; linkClass: string }) {
+  return items.map((item) =>
+    item.children.length > 0 ? (
+      <div key={item.label} className="group relative">
+        {item.href ? (
+          <Link href={item.href} className={linkClass}>
+            {item.label}
+          </Link>
+        ) : (
+          <span className="cursor-default">{item.label}</span>
+        )}
+        <Flyout items={item.children} depth={0} />
+      </div>
+    ) : (
+      <Link key={item.href} href={item.href ?? "/"} className={linkClass}>
+        {item.label}
+      </Link>
+    ),
+  );
+}
+
+function Flyout({ items, depth }: { items: MenuItem[]; depth: number }) {
+  return (
+    <div
+      className={
+        depth === 0
+          ? "invisible absolute left-0 top-full z-50 min-w-56 pt-2 opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
+          : "invisible absolute left-full top-0 z-50 min-w-52 pl-2 opacity-0 group-hover/sub:visible group-hover/sub:opacity-100 group-focus-within/sub:visible group-focus-within/sub:opacity-100"
+      }
+    >
+      <div className="rounded-xl border border-[var(--line)] bg-[var(--paper)] py-2 text-[var(--ink)] shadow">
+        {items.map((item) => (
+          <div
+            key={`${item.label}-${item.href ?? "group"}`}
+            className={depth === 0 ? "group/sub relative" : "group/deep relative"}
+          >
+            {item.href ? (
+              <Link href={item.href} className="block px-4 py-2 hover:bg-[var(--sand)]">
+                {item.label}
+              </Link>
+            ) : (
+              <span className="block px-4 py-2">{item.label}</span>
+            )}
+            {item.children.length > 0 ? <Flyout items={item.children} depth={depth + 1} /> : null}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MobileItems({ items, onNavigate }: { items: MenuItem[]; onNavigate: () => void }) {
+  return items.map((item) => (
+    <div key={`${item.label}-${item.href ?? "group"}`} className="flex flex-col gap-3">
+      {item.href ? (
+        <Link href={item.href} onClick={onNavigate}>
+          {item.label}
+        </Link>
+      ) : (
+        <span>{item.label}</span>
+      )}
+      {item.children.length > 0 ? (
+        <div className="flex flex-col gap-3 border-l border-white/25 pl-3">
+          <MobileItems items={item.children} onNavigate={onNavigate} />
+        </div>
+      ) : null}
+    </div>
+  ));
+}
+
+function MenuIcon({ open }: { open: boolean }) {
+  return (
+    <svg viewBox="0 0 24 24" className="h-7 w-7" aria-hidden="true">
+      {open ? (
+        <path d="M6 6 L18 18 M18 6 L6 18" stroke="currentColor" strokeWidth="2" />
+      ) : (
+        <path d="M4 7h16 M4 12h16 M4 17h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      )}
+    </svg>
+  );
+}
+
+export function SiteHeader() {
+  const pathname = usePathname();
+  const chinese = pathname.startsWith("/zh/") || pathname === "/zh";
+  const home = pathname === "/";
+  const items = chinese ? chineseMenu : mainMenu;
+  const linkClass = home ? "text-white hover:text-[var(--orange)]" : itemClass;
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  return (
+    <header
+        className={
+          open
+            ? "sticky top-0 z-[70] bg-[var(--ink)] text-white"
+            : home
+              ? "absolute inset-x-0 top-0 z-40 text-white"
+              : "sticky top-0 z-40 border-b border-[var(--line)] bg-[var(--paper)]/95 text-[var(--ink)] backdrop-blur"
+        }
+    >
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
+        <Link href={chinese ? "/zh/首頁/" : "/"} className="shrink-0">
+          <img
+            src="https://speedy-move.com/wp-content/uploads/2023/10/Junk-removal-Hong-Kong-2.png"
+            alt="Speedy Move"
+            className="h-11 w-auto lg:h-12"
+          />
+        </Link>
+        <nav className="hidden flex-wrap items-center gap-x-4 gap-y-2 text-[length:var(--text-small)] font-semibold lg:flex" aria-label="Primary">
+          <DesktopItems items={items} linkClass={linkClass} />
+        </nav>
+        <div className="flex shrink-0 items-center gap-3">
+          <LanguageSwitch chinese={chinese} />
+          <a
+            href={home ? `tel:${site.phoneTel}` : site.whatsapp}
+            className="site-button hidden rounded-[var(--radius-button)] bg-[var(--orange)] px-4 py-2 text-[length:var(--text-small)] font-bold text-[var(--ink)] lg:inline-flex"
+          >
+            {home ? "9847-7838" : "WhatsApp quote"}
+          </a>
+          <button
+            type="button"
+            className={`lg:hidden ${home ? "text-white" : "text-[var(--ink)]"}`}
+            aria-expanded={open}
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen((value) => !value)}
+          >
+            <MenuIcon open={open} />
+          </button>
+        </div>
+      </div>
+      {open ? (
+        <nav
+          className="fixed inset-0 z-[60] overflow-auto bg-[var(--ink)] px-6 pb-28 pt-24 text-base font-semibold text-white lg:hidden"
+          aria-label="Mobile"
+        >
+          <div className="flex flex-col gap-4">
+            <MobileItems items={items} onNavigate={() => setOpen(false)} />
+            <a
+              href={`tel:${site.phoneTel}`}
+              className="site-button mt-2 inline-flex w-fit rounded-[var(--radius-button)] bg-[var(--orange)] px-4 py-2 text-[var(--ink)]"
+            >
+              9847-7838
+            </a>
+          </div>
+        </nav>
+      ) : null}
+    </header>
+  );
+}
