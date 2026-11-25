@@ -144,6 +144,16 @@ export function SiteHeader() {
   }, [pathname]);
 
   useEffect(() => {
+    const sync = () => {
+      const half = (window.innerWidth - document.documentElement.clientWidth) / 2;
+      document.documentElement.style.setProperty("--scrollbar-half", `${half}px`);
+    };
+    sync();
+    window.addEventListener("resize", sync);
+    return () => window.removeEventListener("resize", sync);
+  }, []);
+
+  useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
@@ -156,18 +166,19 @@ export function SiteHeader() {
           open
             ? "sticky top-0 z-[70] bg-[var(--ink)] text-white"
             : home
-              ? "absolute inset-x-0 top-0 z-40 text-white"
+              ? "is-home absolute inset-x-0 top-0 z-40 text-white"
               : "sticky top-0 z-40 border-b border-[var(--line)] bg-[var(--paper)]/95 text-[var(--ink)] backdrop-blur"
         }
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
+      <div className="header-bar mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-3">
         <Link href={chinese ? "/zh/首頁/" : "/"} className="shrink-0">
           <img
             src="https://speedy-move.com/wp-content/uploads/2023/10/Junk-removal-Hong-Kong-2.png"
             alt="Speedy Move"
-            className="h-11 w-auto lg:h-12"
+            className="site-logo h-11 w-auto lg:h-12"
           />
         </Link>
+        <div className="header-tools contents lg:flex">
         <nav className="hidden flex-wrap items-center gap-x-4 gap-y-2 text-[length:var(--text-small)] font-semibold lg:flex" aria-label="Primary">
           <DesktopItems items={items} linkClass={linkClass} />
         </nav>
@@ -188,6 +199,7 @@ export function SiteHeader() {
           >
             <MenuIcon open={open} />
           </button>
+        </div>
         </div>
       </div>
       {open ? (

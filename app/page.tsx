@@ -1,8 +1,10 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import type { Metadata } from "next";
+import { GoogleCarousel } from "@/components/google-carousel";
 import { faqs } from "@/components/home-page";
 import { ImportedBody } from "@/components/imported-body";
+import { googleCardMark, googleReviewsHtml, loadGoogleReviews, reviewDateLabel } from "@/lib/gbp-reviews";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -18,8 +20,23 @@ export const metadata: Metadata = {
   },
 };
 
+export const revalidate = 3600;
+
 export default async function Page() {
-  const body = await readFile(path.join(process.cwd(), "content", "bodies", "4993.html"), "utf8");
+  const source = await readFile(path.join(process.cwd(), "content", "bodies", "4993.html"), "utf8");
+  const body = source
+    .replaceAll("<!--google-g-->", googleCardMark)
+    .replaceAll(/<time datetime="([^"]+)"><\/time>/g, (_, iso: string) => {
+      const label = reviewDateLabel(iso);
+      return `<time datetime="${iso}">${label}</time>`;
+    });
+  const reviews = await loadGoogleReviews();
+  const html = reviews
+    ? body.replace(
+        "<h2>Hear From Our Happy Clients</h2>",
+        `<h2>Hear From Our Happy Clients</h2>\n${googleReviewsHtml(reviews)}`,
+      )
+    : body;
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -53,7 +70,8 @@ export default async function Page() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <article className="home-copy">
-        <ImportedBody html={body} variant="home" />
+        <ImportedBody html={html} variant="home" />
+        <GoogleCarousel />
       </article>
     </>
   );

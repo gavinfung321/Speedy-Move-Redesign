@@ -1,0 +1,14 @@
+---
+description: Keep small layout fixes to one measurement, one edit, and one check
+alwaysApply: true
+---
+
+# Efficient layout fixes
+
+For a small visual fix, measure the window the user is looking at, edit once, measure that same window again, then stop.
+
+- Change only the reported problem. A clear gap and a shared edge are enough. Do not invent a new size curve.
+- Do not resize through other widths unless the user asked, or a number shows a screen they already accepted has broken.
+- Fold a few pixels of mismatch into the same edit. Do not open a second investigation.
+- Trust the measured pixels. Do not screenshot to re-judge a number already measured.
+---
