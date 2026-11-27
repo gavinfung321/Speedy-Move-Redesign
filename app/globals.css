@@ -2596,9 +2596,290 @@ section.home-copy[data-shared="blog-teaser"] .blog-card a {
   margin-top: 0.28rem;
 }
 
+.demo-intro {
+  max-width: 42rem;
+  margin: 0 auto 1.75rem;
+}
+
+.demo-flow > .service-split {
+  margin-top: 4.5rem;
+}
+
+.demo-flow > .service-actions {
+  margin-top: 2.5rem;
+}
+
+.demo-flow > .feature-row {
+  margin-top: 2rem;
+}
+
+.demo-flow > .price-layout,
+.demo-flow > .service-faq {
+  margin-top: 1.5rem;
+}
+
+.demo-flow > .price-layout .notes,
+.demo-flow > .price-layout ul {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+.demo-reasons {
+  max-width: 46rem;
+  margin-inline: auto;
+}
+
+.demo-approved {
+  margin: 4.5rem calc(50% - 50vw) 0;
+  padding: 5.75rem 1.5rem;
+  background:
+    linear-gradient(rgb(20 16 12 / 62%), rgb(20 16 12 / 62%)),
+    var(--banner) center 42% / cover no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.demo-approved h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  max-width: 44rem;
+  margin: 0 auto 1.15rem;
+  color: white;
+  text-align: center;
+}
+
+.demo-approved p {
+  max-width: 40rem;
+  margin: 0 auto;
+  color: white;
+}
+
+.demo-check {
+  width: 1.55rem;
+  height: 1.55rem;
+  flex: none;
+}
+
+.demo-services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+  gap: 0.65rem 1rem;
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+.home-copy .demo-services a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  border-radius: 999px;
+  background: var(--sand);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  padding: 0.7rem 1.15rem;
+  text-align: center;
+}
+
+article.service-page:not(:has(.demo-service:target)) .demo-services a:first-child,
+article.service-page:has(#tab-homedemolition:target) .demo-services a[href="#tab-homedemolition"],
+article.service-page:has(#tab-shopdemolition:target) .demo-services a[href="#tab-shopdemolition"],
+article.service-page:has(#tab-restaurantdemolition:target) .demo-services a[href="#tab-restaurantdemolition"],
+article.service-page:has(#tab-officedemolition:target) .demo-services a[href="#tab-officedemolition"],
+article.service-page:has(#tab-unauthorizedstructures:target) .demo-services a[href="#tab-unauthorizedstructures"],
+article.service-page:has(#tab-structuralrestoration:target) .demo-services a[href="#tab-structuralrestoration"] {
+  background: var(--orange);
+  color: var(--ink);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .home-copy .demo-services a:hover {
+    background: var(--sand-deep);
+    color: var(--ink);
+  }
+
+  article.service-page:not(:has(.demo-service:target)) .demo-services a:first-child:hover,
+  article.service-page:has(#tab-homedemolition:target) .demo-services a[href="#tab-homedemolition"]:hover,
+  article.service-page:has(#tab-shopdemolition:target) .demo-services a[href="#tab-shopdemolition"]:hover,
+  article.service-page:has(#tab-restaurantdemolition:target) .demo-services a[href="#tab-restaurantdemolition"]:hover,
+  article.service-page:has(#tab-officedemolition:target) .demo-services a[href="#tab-officedemolition"]:hover,
+  article.service-page:has(#tab-unauthorizedstructures:target) .demo-services a[href="#tab-unauthorizedstructures"]:hover,
+  article.service-page:has(#tab-structuralrestoration:target) .demo-services a[href="#tab-structuralrestoration"]:hover {
+    background: var(--orange-deep);
+    color: var(--ink);
+  }
+}
+
+.demo-service {
+  display: none;
+  margin-top: 1.25rem;
+  overflow: hidden;
+  background: var(--sand);
+  border-radius: 1.25rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.demo-service:target,
+article.service-page:not(:has(.demo-service:target)) #tab-homedemolition {
+  display: grid;
+}
+
+.demo-service img {
+  width: 100%;
+  height: 14rem;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.demo-service > div {
+  padding: 1.35rem 1.35rem 1.5rem;
+}
+
+.demo-case {
+  display: grid;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  background: var(--sand);
+  border-radius: 1.25rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.demo-case > div {
+  padding: 1.35rem 1.35rem 1.5rem;
+}
+
+.demo-case img {
+  width: 100%;
+  height: 14rem;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.demo-service h2,
+.demo-case h3 {
+  margin: 0 0 0.7rem;
+}
+
+.demo-case h3 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.demo-service h2 {
+  font-size: 1.75rem;
+}
+
+article.service-page .demo-service h2 {
+  text-align: center;
+}
+
+.demo-service p,
+.demo-case p,
+.demo-service li,
+.demo-case li {
+  text-align: left;
+}
+
+.demo-case p {
+  margin: 0.7rem 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+article.home-copy .demo-points {
+  background: transparent;
+  padding-top: 2.75rem;
+  padding-bottom: 0.5rem;
+}
+
+article.home-copy .demo-points .feature {
+  background: transparent;
+  padding: 0;
+}
+
+.demo-icon {
+  display: grid;
+  place-items: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  grid-row: 1;
+  grid-column: 1;
+  border-radius: 0.8rem;
+  background: var(--orange);
+  color: var(--ink);
+}
+
+.demo-icon svg {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: currentColor;
+}
+
+.demo-reviews blockquote > p:not(.review-stars) {
+  font-style: italic;
+}
+
+.demo-prices tbody tr:first-child td {
+  font-weight: 400;
+  text-align: left;
+  white-space: normal;
+}
+
+.demo-prices tbody td:nth-child(2),
+.demo-prices tbody tr:first-child td:nth-child(2) {
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+
 @media (min-width: 768px) {
   .haul-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .demo-case {
+    grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.82fr);
+    align-items: stretch;
+  }
+
+  .demo-case > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 1.75rem;
+  }
+
+  .demo-service:target,
+  article.service-page:not(:has(.demo-service:target)) #tab-homedemolition {
+    grid-template-columns: minmax(16rem, 0.95fr) minmax(0, 1.05fr);
+    align-items: stretch;
+  }
+
+  .demo-service img {
+    height: 100%;
+    min-height: 18rem;
+  }
+
+  .demo-service > div {
+    padding: 2rem 2.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .demo-case img {
+    height: 0;
+    min-height: 100%;
+    max-height: none;
+    object-fit: cover;
   }
 }
 
