@@ -6,7 +6,7 @@ const MARKER = /<div data-shared="([\w-]+)"><\/div>/g;
 
 export function ImportedBody({ html, variant }: { html: string; variant: "home" | "page" }) {
   const className = variant === "home" ? "home-copy" : "imported-body";
-  const parts = html.split(MARKER);
+  const parts = html.replaceAll("\u00a0", " ").split(MARKER);
   const nodes: ReactNode[] = [];
 
   for (let index = 0; index < parts.length; index += 1) {

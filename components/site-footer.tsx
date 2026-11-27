@@ -17,7 +17,7 @@ export function SiteFooter() {
           <ul className="mt-3 space-y-2 text-sm">
             {footerMenu.map((item) => (
               <li key={item.href}>
-                <Link href={item.href ?? "/"} className="hover:underline">
+                <Link href={item.href ?? "/"} className="transition-colors duration-150 hover:text-[var(--orange)]">
                   {item.label}
                 </Link>
               </li>
@@ -28,12 +28,12 @@ export function SiteFooter() {
           <p className="text-sm font-bold uppercase tracking-wide text-white/70">Contact</p>
           <ul className="mt-3 space-y-2 text-sm leading-6">
             <li>
-              <a href={site.whatsapp} className="hover:underline">
+              <a href={site.whatsapp} className="transition-colors duration-150 hover:text-[var(--orange)]">
                 WhatsApp or call {site.phoneDisplay}
               </a>
             </li>
             <li>
-              <a href={`mailto:${site.email}`} className="hover:underline">
+              <a href={`mailto:${site.email}`} className="transition-colors duration-150 hover:text-[var(--orange)]">
                 {site.email}
               </a>
             </li>

@@ -155,7 +155,7 @@ ${googleCardMark}
     `<button type="button" class="google-arrow google-arrow-${direction}" aria-label="${label}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${path}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>`;
 
   const scoreArrow = `<svg class="google-score-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 6.5 15 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-  const score = `<strong>${rating}</strong><span class="review-stars" role="img" aria-label="${rating} out of 5 stars">${starSpans(data.averageRating)}</span><span class="google-count">${data.totalReviewCount.toLocaleString("en-HK")} Google reviews</span><span class="google-brand">${googleWordmark}${scoreArrow}</span>`;
+  const score = `<strong>${rating}</strong><span class="review-stars" role="img" aria-label="${rating} out of 5 stars">${starSpans(data.averageRating)}</span><span class="google-count">${data.totalReviewCount.toLocaleString("en-HK")} Google reviews</span>${googleWordmark}<span class="google-view">View on Google${scoreArrow}</span>`;
   const profile = `<a class="google-score" href="https://share.google/3IVMyLSjZERIBvTpV" target="_blank" rel="noopener noreferrer">${score}</a>`;
 
   return `<div class="google-live">

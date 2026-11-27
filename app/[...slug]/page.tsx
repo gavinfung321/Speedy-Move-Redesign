@@ -3,6 +3,7 @@ import path from "node:path";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CarouselControls } from "@/components/carousel-controls";
 import { ImportedBody } from "@/components/imported-body";
 import bodyIndex from "@/content/body-index.json";
 import { allPages, findPage, pageSlug, seoTitle } from "@/lib/pages";
@@ -58,6 +59,16 @@ export default async function ChecklistPage({ params }: { params: Promise<RouteP
   const body = await readBody(pagePath);
   const hero = body.startsWith('<section class="page-hero"');
 
+  const serviceTemplates = new Set(["core-service", "item-service", "moving", "demolition"]);
+  if (page.language === "en" && serviceTemplates.has(page.template)) {
+    return (
+      <article className="home-copy service-page">
+        <ImportedBody html={body} variant="home" />
+        <CarouselControls />
+      </article>
+    );
+  }
+
   return (
     <article className={hero ? "mx-auto max-w-3xl px-4 pb-16" : "mx-auto max-w-3xl px-4 py-16"}>
       {hero ? null : <h1 className="text-4xl font-extrabold">{page.title}</h1>}
@@ -75,7 +86,7 @@ export default async function ChecklistPage({ params }: { params: Promise<RouteP
         WhatsApp a quote
       </a>
       <p className="mt-8">
-        <Link href="/" className="font-bold text-[var(--orange)]">
+        <Link href="/" className="font-bold text-[var(--orange-deep)] transition-colors duration-150 hover:text-[var(--orange-link)]">
           Back to the homepage
         </Link>
       </p>
