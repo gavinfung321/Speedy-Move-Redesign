@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { chineseMenu, mainMenu, type MenuItem } from "@/lib/menus";
 import { site } from "@/lib/site";
 
@@ -158,6 +158,8 @@ export function SiteHeader() {
   const linkClass = "text-white hover:text-[var(--orange)]";
   const [open, setOpen] = useState(false);
   const [bar, setBar] = useState<"top" | "hidden" | "shown">("top");
+  const menuOpen = useRef(false);
+  menuOpen.current = open;
   const [overPhoto, setOverPhoto] = useState(true);
 
   useEffect(() => {
@@ -211,6 +213,19 @@ export function SiteHeader() {
     };
   }, [open]);
 
+  useEffect(() => {
+    if (!open) return;
+    const onPointerDown = (event: PointerEvent) => {
+      const header = document.querySelector("header.site-nav");
+      if (!(event.target instanceof Node) || header?.contains(event.target)) return;
+      event.preventDefault();
+      event.stopPropagation();
+      setOpen(false);
+    };
+    document.addEventListener("pointerdown", onPointerDown, true);
+    return () => document.removeEventListener("pointerdown", onPointerDown, true);
+  }, [open]);
+
   useLayoutEffect(() => {
     const photo = Boolean(document.querySelector("main .home-hero, main .page-hero"));
     setOverPhoto(photo);
@@ -219,23 +234,56 @@ export function SiteHeader() {
 
   useEffect(() => {
     let last = window.scrollY;
+    let carry = 0;
     let frame = 0;
+    let touchY = 0;
+    const place = (next: "top" | "hidden" | "shown") => {
+      setBar((current) => (current === next ? current : next));
+    };
     const onScroll = () => {
       if (frame) return;
       frame = window.requestAnimationFrame(() => {
         frame = 0;
+        if (menuOpen.current) return;
         const y = window.scrollY;
-        const delta = y - last;
+        carry += y - last;
         last = y;
-        setBar((current) => {
-          const next = y <= 8 ? "top" : delta < -2 ? "shown" : delta > 2 ? "hidden" : current;
-          return next === current ? current : next;
-        });
+        if (y <= 8) {
+          carry = 0;
+          place("top");
+          return;
+        }
+        if (carry <= -8) {
+          carry = 0;
+          place("shown");
+        } else if (carry >= 8) {
+          carry = 0;
+          place("hidden");
+        }
       });
     };
+    const onTouchStart = (event: TouchEvent) => {
+      touchY = event.touches[0]?.clientY ?? touchY;
+    };
+    const onTouchMove = (event: TouchEvent) => {
+      const y = event.touches[0]?.clientY;
+      if (y == null || menuOpen.current) return;
+      const delta = y - touchY;
+      touchY = y;
+      if (Math.abs(delta) < 4) return;
+      if (window.scrollY <= 8) {
+        place("top");
+        return;
+      }
+      place(delta > 0 ? "shown" : "hidden");
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("touchstart", onTouchStart, { passive: true });
+    window.addEventListener("touchmove", onTouchMove, { passive: true });
     return () => {
       window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("touchstart", onTouchStart);
+      window.removeEventListener("touchmove", onTouchMove);
       if (frame) window.cancelAnimationFrame(frame);
     };
   }, [pathname]);

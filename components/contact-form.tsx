@@ -77,21 +77,21 @@ export function ContactForm({ language }: { language: "en" | "zh" }) {
       <label className="grid gap-1 font-bold">
         <span>
           {text.name}
-          <span aria-hidden="true"> *</span>
+          <span aria-hidden="true" className="text-[#d21f1f]"> *</span>
         </span>
         <input className={fieldClass} name={text.name} type="text" autoComplete="name" required />
       </label>
       <label className="grid gap-1 font-bold">
         <span>
           {text.email}
-          <span aria-hidden="true"> *</span>
+          <span aria-hidden="true" className="text-[#d21f1f]"> *</span>
         </span>
         <input className={fieldClass} name="email" type="email" autoComplete="email" required />
       </label>
       <label className="grid gap-1 font-bold">
         <span>
           {text.message}
-          <span aria-hidden="true"> *</span>
+          <span aria-hidden="true" className="text-[#d21f1f]"> *</span>
         </span>
         <textarea className={fieldClass} name={text.message} rows={4} required />
       </label>

@@ -1,14 +1,14 @@
 ---
-description: Keep small layout fixes to one measurement, one edit, and one check
+description: Edit the code and stop. Open the page only when the change cannot be judged from the code.
 alwaysApply: true
 ---
 
-# Efficient layout fixes
+# Work from the code
 
-For a small visual fix, measure the window the user is looking at, edit once, measure that same window again, then stop.
+Edit the code and stop. Do not open the browser, lock the page, reload it, scroll it, or screenshot it to confirm a change you can already judge from the code.
 
-- Change only the reported problem. A clear gap and a shared edge are enough. Do not invent a new size curve.
-- Do not resize through other widths unless the user asked, or a number shows a screen they already accepted has broken.
-- Fold a few pixels of mismatch into the same edit. Do not open a second investigation.
-- Trust the measured pixels. Do not screenshot to re-judge a number already measured.
+- Open the page only when the fix cannot be judged from the code. Look only at the one section the user pointed at, then stop.
+- Change only the reported problem. Do not check other widths, other pages, or nearby sections.
+- Fold a small mismatch into the same edit. Do not open a second pass.
+- This overrides the habit of verifying every UI change in the browser.
 ---

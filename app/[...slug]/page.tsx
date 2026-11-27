@@ -4,8 +4,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CarouselControls } from "@/components/carousel-controls";
+import { ContactForm } from "@/components/contact-form";
 import { ImportedBody } from "@/components/imported-body";
 import bodyIndex from "@/content/body-index.json";
+import { layoutCompanyPage, layoutContactPage } from "@/lib/company-layout";
+import { layoutItemPage } from "@/lib/item-layout";
+import { layoutLocationsPage, layoutNeighbourhoodPage } from "@/lib/location-layout";
 import { allPages, findPage, pageSlug, seoTitle } from "@/lib/pages";
 import { site } from "@/lib/site";
 
@@ -57,13 +61,55 @@ export default async function ChecklistPage({ params }: { params: Promise<RouteP
   const page = findPage(pagePath);
   if (!page) notFound();
   const body = await readBody(pagePath);
+  const serviceBody = page.language === "en" && page.template === "item-service" ? layoutItemPage(body) : body;
   const hero = body.startsWith('<section class="page-hero"');
 
   const serviceTemplates = new Set(["core-service", "item-service", "moving", "demolition"]);
-  if (page.language === "en" && serviceTemplates.has(page.template)) {
+  if (page.language === "en" && page.path === "/locations/") {
+    return (
+      <article className="home-copy location-page">
+        <ImportedBody html={layoutLocationsPage(body)} variant="home" />
+      </article>
+    );
+  }
+
+  if (page.language === "en" && page.template === "location") {
     return (
       <article className="home-copy service-page">
-        <ImportedBody html={body} variant="home" />
+        <ImportedBody html={layoutNeighbourhoodPage(body)} variant="home" />
+        <CarouselControls />
+      </article>
+    );
+  }
+
+  if (page.language === "en" && page.path === "/contact/") {
+    const contact = layoutContactPage(body);
+    return (
+      <article className="home-copy service-page">
+        <div className="home-copy">
+          <div dangerouslySetInnerHTML={{ __html: contact.hero }} />
+          <ul className="contact-points" dangerouslySetInnerHTML={{ __html: contact.facts }} />
+          <div className="service-detail contact-ask">
+            <div dangerouslySetInnerHTML={{ __html: contact.close }} />
+            <ContactForm language="en" />
+          </div>
+        </div>
+      </article>
+    );
+  }
+
+  if (page.language === "en" && (page.path === "/pricing/" || page.path === "/faq/" || page.path === "/our-story/" || page.path === "/blog/")) {
+    return (
+      <article className={page.path === "/our-story/" ? "home-copy service-page story-page" : "home-copy service-page"}>
+        <ImportedBody html={layoutCompanyPage(page.path, body)} variant="home" />
+      </article>
+    );
+  }
+
+  if (page.language === "en" && (serviceTemplates.has(page.template) || page.path === "/donation/")) {
+    return (
+      <article className="home-copy service-page">
+        <ImportedBody html={serviceBody} variant="home" />
         <CarouselControls />
       </article>
     );
