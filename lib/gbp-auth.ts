@@ -56,7 +56,7 @@ export async function exchangeGbpCode(code: string) {
   if (!response.ok || !payload.access_token) {
     throw new Error(payload.error_description || payload.error || "Google did not return an access token.");
   }
-  return payload;
+  return { access_token: payload.access_token, refresh_token: payload.refresh_token };
 }
 
 export function saveGbpRefreshToken(token: string) {

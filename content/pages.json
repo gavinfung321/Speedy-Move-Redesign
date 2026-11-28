@@ -2,7 +2,7 @@
   {
     "path": "/category/furniture-disposal/",
     "title": "Furniture Disposal",
-    "description": "",
+    "description": "Guides on disposing of, recycling, and donating used furniture in Hong Kong.",
     "seoTitle": "Furniture Disposal",
     "language": "en",
     "template": "category",
@@ -11,7 +11,7 @@
   {
     "path": "/category/home-moving/",
     "title": "Home Moving",
-    "description": "",
+    "description": "Guides on planning a home move in Hong Kong, from packing to moving day.",
     "seoTitle": "Home Moving",
     "language": "en",
     "template": "category",
@@ -20,7 +20,7 @@
   {
     "path": "/category/junk-removal/",
     "title": "Junk Removal",
-    "description": "",
+    "description": "Guides on junk removal in Hong Kong, including disposal, recycling, and booking a pickup.",
     "seoTitle": "Junk Removal",
     "language": "en",
     "template": "category",
@@ -29,7 +29,7 @@
   {
     "path": "/category/office-moving/",
     "title": "Office Moving",
-    "description": "",
+    "description": "Guides on planning an office move in Hong Kong, from the schedule to the moving day.",
     "seoTitle": "Office Moving",
     "language": "en",
     "template": "category",
@@ -38,7 +38,7 @@
   {
     "path": "/category/recycling/",
     "title": "Recycling",
-    "description": "",
+    "description": "Guides on what Hong Kong homes and offices can recycle, and where to take it.",
     "seoTitle": "Recycling",
     "language": "en",
     "template": "category",
@@ -101,7 +101,7 @@
   {
     "path": "/blog/",
     "title": "Blog",
-    "description": "",
+    "description": "Speedy Move articles on junk removal, furniture disposal, moving, and recycling in Hong Kong.",
     "seoTitle": "%title% %sitename%",
     "language": "en",
     "template": "company",
@@ -1820,7 +1820,7 @@
   {
     "path": "/zh/家居垃圾處理/",
     "title": "家居垃圾處理",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及辦公室清理家居垃圾，並安排清運。WhatsApp 索取免費報價。",
     "seoTitle": "家居垃圾處理",
     "language": "zh",
     "template": "item-service",
@@ -1838,7 +1838,7 @@
   {
     "path": "/zh/戶外傢俬棄置/",
     "title": "戶外傢俬棄置",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及商戶清走戶外傢俬，包括庭園桌椅。WhatsApp 索取免費報價。",
     "seoTitle": "戶外傢俬棄置服務",
     "language": "zh",
     "template": "item-service",
@@ -1883,7 +1883,7 @@
   {
     "path": "/zh/棄置健身器材/",
     "title": "棄置健身器材",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及健身房清走健身器材，並安排搬運。WhatsApp 索取免費報價。",
     "seoTitle": "棄置健身器材服務",
     "language": "zh",
     "template": "item-service",
@@ -1901,7 +1901,7 @@
   {
     "path": "/zh/棄置冷氣機/",
     "title": "棄置冷氣機",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及商戶拆除並清走冷氣機。WhatsApp 索取免費報價。",
     "seoTitle": "棄置冷氣機",
     "language": "zh",
     "template": "item-service",
@@ -1910,7 +1910,7 @@
   {
     "path": "/zh/棄置單車/",
     "title": "棄置單車",
-    "description": "",
+    "description": "Speedy Move 為香港住宅清走單車，狀況良好的可回收。WhatsApp 索取免費報價。",
     "seoTitle": "棄置單車服務",
     "language": "zh",
     "template": "item-service",
@@ -1919,7 +1919,7 @@
   {
     "path": "/zh/棄置地毯/",
     "title": "棄置地毯",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及辦公室清走舊地毯。WhatsApp 索取免費報價。",
     "seoTitle": "棄置地毯",
     "language": "zh",
     "template": "item-service",
@@ -1928,7 +1928,7 @@
   {
     "path": "/zh/棄置床架/",
     "title": "棄置床架",
-    "description": "",
+    "description": "Speedy Move 為香港住宅拆走床架並安排清運。WhatsApp 索取免費報價。",
     "seoTitle": "棄置床架服務",
     "language": "zh",
     "template": "item-service",
@@ -1937,7 +1937,7 @@
   {
     "path": "/zh/棄置床褥/",
     "title": "棄置床褥",
-    "description": "",
+    "description": "Speedy Move 為香港住宅清走床褥，並安排棄置或回收。WhatsApp 索取免費報價。",
     "seoTitle": "棄置床褥服務",
     "language": "zh",
     "template": "item-service",
@@ -1946,7 +1946,7 @@
   {
     "path": "/zh/棄置廢金屬/",
     "title": "棄置廢金屬",
-    "description": "",
+    "description": "Speedy Move 為香港住宅、辦公室及工場清走廢金屬。WhatsApp 索取免費報價。",
     "seoTitle": "棄置廢金屬服務",
     "language": "zh",
     "template": "item-service",
@@ -1955,7 +1955,7 @@
   {
     "path": "/zh/棄置彈床及兒童遊樂設施服務/",
     "title": "棄置彈床及兒童遊樂設施",
-    "description": "",
+    "description": "Speedy Move 為香港住宅拆走彈床及兒童遊樂設施。WhatsApp 索取免費報價。",
     "seoTitle": "棄置彈床及兒童遊樂設施",
     "language": "zh",
     "template": "item-service",
@@ -1964,7 +1964,7 @@
   {
     "path": "/zh/棄置微波爐/",
     "title": "棄置微波爐",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及辦公室清走微波爐。WhatsApp 索取免費報價。",
     "seoTitle": "棄置微波爐",
     "language": "zh",
     "template": "item-service",
@@ -1973,7 +1973,7 @@
   {
     "path": "/zh/棄置打印機/",
     "title": "棄置打印機",
-    "description": "",
+    "description": "Speedy Move 為香港辦公室及住宅清走打印機。WhatsApp 索取免費報價。",
     "seoTitle": "棄置打印機服務",
     "language": "zh",
     "template": "item-service",
@@ -1982,7 +1982,7 @@
   {
     "path": "/zh/棄置按摩椅/",
     "title": "棄置按摩椅",
-    "description": "",
+    "description": "Speedy Move 為香港住宅清走按摩椅，包括搬運及棄置。WhatsApp 索取免費報價。",
     "seoTitle": "棄置按摩椅服務",
     "language": "zh",
     "template": "item-service",
@@ -1991,7 +1991,7 @@
   {
     "path": "/zh/棄置按摩浴缸/",
     "title": "棄置按摩浴缸",
-    "description": "",
+    "description": "Speedy Move 為香港住宅拆走按摩浴缸並安排清運。WhatsApp 索取免費報價。",
     "seoTitle": "棄置按摩浴缸服務",
     "language": "zh",
     "template": "item-service",
@@ -2000,7 +2000,7 @@
   {
     "path": "/zh/棄置桌子與書桌/",
     "title": "棄置桌子與書桌",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及辦公室清走桌子與書桌。WhatsApp 索取免費報價。",
     "seoTitle": "棄置桌子與書桌服務",
     "language": "zh",
     "template": "item-service",
@@ -2009,7 +2009,7 @@
   {
     "path": "/zh/棄置桌球枱/",
     "title": "棄置桌球枱",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及商戶拆走桌球枱。WhatsApp 索取免費報價。",
     "seoTitle": "棄置桌球枱服務",
     "language": "zh",
     "template": "item-service",
@@ -2018,7 +2018,7 @@
   {
     "path": "/zh/棄置梳化/",
     "title": "棄置梳化",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及辦公室清走梳化，狀況良好的可捐贈。WhatsApp 索取免費報價。",
     "seoTitle": "棄置梳化服務",
     "language": "zh",
     "template": "item-service",
@@ -2027,7 +2027,7 @@
   {
     "path": "/zh/棄置洗碗機/",
     "title": "棄置洗碗機",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及餐廳清走洗碗機。WhatsApp 索取免費報價。",
     "seoTitle": "棄置洗碗機",
     "language": "zh",
     "template": "item-service",
@@ -2036,7 +2036,7 @@
   {
     "path": "/zh/棄置洗衣機及乾衣機/",
     "title": "棄置洗衣機及乾衣機",
-    "description": "",
+    "description": "Speedy Move 為香港住宅清走洗衣機及乾衣機。WhatsApp 索取免費報價。",
     "seoTitle": "棄置洗衣機及乾衣機",
     "language": "zh",
     "template": "item-service",
@@ -2045,7 +2045,7 @@
   {
     "path": "/zh/棄置熱水浴缸/",
     "title": "棄置熱水浴缸",
-    "description": "",
+    "description": "Speedy Move 為香港住宅拆走熱水浴缸並安排清運。WhatsApp 索取免費報價。",
     "seoTitle": "棄置熱水浴缸",
     "language": "zh",
     "template": "item-service",
@@ -2054,7 +2054,7 @@
   {
     "path": "/zh/棄置燒烤爐/",
     "title": "棄置燒烤爐",
-    "description": "",
+    "description": "Speedy Move 為香港住宅清走燒烤爐。WhatsApp 索取免費報價。",
     "seoTitle": "棄置燒烤爐",
     "language": "zh",
     "template": "item-service",
@@ -2063,7 +2063,7 @@
   {
     "path": "/zh/棄置玻璃/",
     "title": "棄置玻璃",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及商戶清走玻璃，並妥善處理。WhatsApp 索取免費報價。",
     "seoTitle": "棄置玻璃服務",
     "language": "zh",
     "template": "item-service",
@@ -2072,7 +2072,7 @@
   {
     "path": "/zh/棄置衣櫃/",
     "title": "棄置衣櫃",
-    "description": "",
+    "description": "Speedy Move 為香港住宅拆走衣櫃並安排清運。WhatsApp 索取免費報價。",
     "seoTitle": "棄置衣櫃服務",
     "language": "zh",
     "template": "item-service",
@@ -2090,7 +2090,7 @@
   {
     "path": "/zh/棄置車胎/",
     "title": "棄置車胎",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及車房清走車胎，並安排回收。WhatsApp 索取免費報價。",
     "seoTitle": "棄置車胎服務",
     "language": "zh",
     "template": "item-service",
@@ -2099,7 +2099,7 @@
   {
     "path": "/zh/棄置鋼琴/",
     "title": "棄置鋼琴",
-    "description": "",
+    "description": "Speedy Move 為香港住宅搬走鋼琴，包括搬運及棄置。WhatsApp 索取免費報價。",
     "seoTitle": "棄置鋼琴服務",
     "language": "zh",
     "template": "item-service",
@@ -2108,7 +2108,7 @@
   {
     "path": "/zh/棄置雪櫃/",
     "title": "棄置雪櫃",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及商戶清走雪櫃。WhatsApp 索取免費報價。",
     "seoTitle": "棄置雪櫃服務",
     "language": "zh",
     "template": "item-service",
@@ -2117,7 +2117,7 @@
   {
     "path": "/zh/棄置電器/",
     "title": "棄置電器",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及商戶清走各類電器。WhatsApp 索取免費報價。",
     "seoTitle": "棄置電器",
     "language": "zh",
     "template": "item-service",
@@ -2126,7 +2126,7 @@
   {
     "path": "/zh/棄置電子廢物/",
     "title": "棄置電子廢物",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及辦公室清走電子廢物。WhatsApp 索取免費報價。",
     "seoTitle": "棄置電子廢物服務",
     "language": "zh",
     "template": "item-service",
@@ -2135,7 +2135,7 @@
   {
     "path": "/zh/棄置電腦/",
     "title": "棄置電腦",
-    "description": "",
+    "description": "Speedy Move 為香港辦公室及住宅清走電腦。WhatsApp 索取免費報價。",
     "seoTitle": "棄置電腦服務",
     "language": "zh",
     "template": "item-service",
@@ -2144,7 +2144,7 @@
   {
     "path": "/zh/棄置電視/",
     "title": "棄置電視",
-    "description": "",
+    "description": "Speedy Move 為香港住宅清走電視。WhatsApp 索取免費報價。",
     "seoTitle": "棄置電視服務",
     "language": "zh",
     "template": "item-service",
@@ -2189,7 +2189,7 @@
   {
     "path": "/zh/清理園藝廢物/",
     "title": "清理園藝廢物",
-    "description": "",
+    "description": "Speedy Move 為香港住宅清理園藝廢物，包括剪枝及枯葉。WhatsApp 索取免費報價。",
     "seoTitle": "清理園藝廢物",
     "language": "zh",
     "template": "item-service",
@@ -2207,7 +2207,7 @@
   {
     "path": "/zh/清理裝修廢料/",
     "title": "清理裝修廢料",
-    "description": "",
+    "description": "Speedy Move 為香港住宅及商戶清走裝修廢料。WhatsApp 索取免費報價。",
     "seoTitle": "清理裝修廢料服務",
     "language": "zh",
     "template": "item-service",
@@ -2261,7 +2261,7 @@
   {
     "path": "/10-best-movers-in-hong-kong/",
     "title": "10 Best Movers in Hong Kong",
-    "description": "",
+    "description": "What to compare when choosing a mover in Hong Kong, from the crew and access to the quote for your home or office.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2270,7 +2270,7 @@
   {
     "path": "/10-eco-friendly-ways-to-junk-removal-in-hong-kong/",
     "title": "10 Eco-Friendly Ways to Junk Removal in Hong Kong",
-    "description": "",
+    "description": "Ten practical ways to clear junk in Hong Kong while donating or recycling what can still be used.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2279,7 +2279,7 @@
   {
     "path": "/10-largest-disposal-places-in-hong-kong/",
     "title": "10 Largest Disposal Places in Hong Kong",
-    "description": "",
+    "description": "A guide to Hong Kong's main waste facilities, and how a household can arrange a junk pickup instead.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2288,7 +2288,7 @@
   {
     "path": "/10-responsible-junk-removal-options-in-hong-kong/",
     "title": "10 Responsible Junk Removal Options in Hong Kong",
-    "description": "",
+    "description": "Ways to dispose of junk in Hong Kong, including donation, recycling, and a booked pickup.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2297,7 +2297,7 @@
   {
     "path": "/10-things-you-need-to-know-about-furniture-disposal-in-hong-kong/",
     "title": "10 Things You Need to Know about Furniture Disposal in Hong Kong",
-    "description": "",
+    "description": "What to know before disposing of furniture in Hong Kong, from building access and volume to donation.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2306,7 +2306,7 @@
   {
     "path": "/10-tips-for-local-moving-in-hong-kong/",
     "title": "10 Tips for Local Moving in Hong Kong",
-    "description": "",
+    "description": "Practical tips for a local move in Hong Kong, including packing, building access, and booking the crew.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2315,7 +2315,7 @@
   {
     "path": "/10-tips-on-budgeting-for-your-move-in-hong-kong/",
     "title": "10 Tips on Budgeting for Your Move in Hong Kong",
-    "description": "",
+    "description": "How to budget a move in Hong Kong, including labour, building access, packing, and disposal.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2324,7 +2324,7 @@
   {
     "path": "/10-tips-on-how-to-choose-your-next-office-location-in-hong-kong/",
     "title": "10 Tips on how to Choose Your Next Office Location in Hong Kong",
-    "description": "",
+    "description": "Points to weigh when choosing a new office in Hong Kong, from the building and lease to the move.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2333,7 +2333,7 @@
   {
     "path": "/10-tips-on-setting-up-utilities-in-your-new-hong-kong-home/",
     "title": "10 Tips on Setting Up Utilities in Your New Hong Kong Home",
-    "description": "",
+    "description": "What to arrange for electricity, water, and gas when you move into a home in Hong Kong.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2342,7 +2342,7 @@
   {
     "path": "/10-ways-to-donate-your-junk-in-hong-kong/",
     "title": "10 Ways to Donate your Junk in Hong Kong",
-    "description": "",
+    "description": "How to donate usable items in Hong Kong, and when a pickup is the simpler way to clear the rest.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2351,7 +2351,7 @@
   {
     "path": "/5-best-ways-to-recycle-old-furniture-in-hong-kong/",
     "title": "5 Best Ways to Recycle Old Furniture in Hong Kong",
-    "description": "",
+    "description": "Five ways to recycle old furniture in Hong Kong, from donation and resale to a collection.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2360,7 +2360,7 @@
   {
     "path": "/5-recycling-myths-in-hong-kong/",
     "title": "5 Recycling Myths in Hong Kong",
-    "description": "",
+    "description": "Five common recycling myths in Hong Kong, and what households can actually send for recycling.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2369,7 +2369,7 @@
   {
     "path": "/5-ways-to-reduce-furniture-waste-in-hong-kong/",
     "title": "5 Ways to Reduce Furniture Waste in Hong Kong",
-    "description": "",
+    "description": "Five ways Hong Kong homes can keep furniture out of the landfill, including repair, donation, and recycling.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2378,7 +2378,7 @@
   {
     "path": "/6-key-points-on-municipal-solid-waste-charging-msw-charging-implementation-in-hong-kong/",
     "title": "6 Key Points on Municipal Solid Waste Charging (MSW Charging) Implementation in Hong Kong",
-    "description": "",
+    "description": "Key points on Hong Kong municipal solid waste charging, and what it means for household rubbish.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2396,7 +2396,7 @@
   {
     "path": "/9-places-to-donate-furnitures-in-hong-kong/",
     "title": "9 Places to Donate Furnitures In Hong Kong",
-    "description": "",
+    "description": "Places in Hong Kong that accept donated furniture, and how to arrange a pickup for the rest.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2405,7 +2405,7 @@
   {
     "path": "/a-complete-guide-to-hong-kongs-new-recycling-stores-green-community/",
     "title": "A Complete Guide to Hong Kong's New Recycling Stores: Green @ Community",
-    "description": "",
+    "description": "How Green@Community recycling stores work in Hong Kong, and what you can take there.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2414,7 +2414,7 @@
   {
     "path": "/a-comprehensive-guide-on-your-office-move-in-hong-kong/",
     "title": "A Comprehensive Guide on Your Office Move in Hong Kong",
-    "description": "",
+    "description": "How to plan an office move in Hong Kong, from the schedule and packing to moving day.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2423,7 +2423,7 @@
   {
     "path": "/a-comprehensive-overview-of-office-relocation-regulations-in-hong-kong/",
     "title": "A Comprehensive Overview of Office Relocation Regulations in Hong Kong",
-    "description": "",
+    "description": "Rules that affect an office relocation in Hong Kong, including building access and the move itself.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2432,7 +2432,7 @@
   {
     "path": "/a-guide-to-protecting-your-belongings-during-a-move-in-hong-kong/",
     "title": "A Guide to Protecting Your Belongings During a Move in Hong Kong",
-    "description": "",
+    "description": "How to protect furniture and belongings during a move in Hong Kong, including wrapping and access.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2441,7 +2441,7 @@
   {
     "path": "/best-guide-for-furniture-disposal-pricing-in-hong-kong/",
     "title": "Best Guide for Furniture Disposal Pricing in Hong Kong",
-    "description": "",
+    "description": "What changes a furniture disposal quote in Hong Kong, including volume, access, and the items.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2450,7 +2450,7 @@
   {
     "path": "/best-guide-to-recycle-furniture-in-hong-kong/",
     "title": "Best Guide to Recycle Furniture in Hong Kong",
-    "description": "",
+    "description": "How to recycle furniture in Hong Kong, and when donation or a pickup is the better route.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2459,7 +2459,7 @@
   {
     "path": "/best-local-moving-guide-in-hong-kong/",
     "title": "Best Local Moving Guide in Hong Kong",
-    "description": "",
+    "description": "A practical guide to a local move in Hong Kong, from packing and building rules to moving day.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2468,7 +2468,7 @@
   {
     "path": "/decoding-feasibility-studies-for-office-relocation-in-hong-kong/",
     "title": "Decoding Feasibility Studies for Office Relocation in Hong Kong",
-    "description": "",
+    "description": "What to check before an office relocation in Hong Kong, including cost, timing, and the building.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2477,7 +2477,7 @@
   {
     "path": "/essential-relocation-checklist-in-hong-kong/",
     "title": "Essential Relocation Checklist in Hong Kong",
-    "description": "",
+    "description": "A checklist for relocating in Hong Kong, from utilities and packing to booking the move.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2486,7 +2486,7 @@
   {
     "path": "/guide-to-cost-estimates-of-junk-removal-in-hong-kong/",
     "title": "Guide to Cost Estimates of Junk Removal in Hong Kong",
-    "description": "",
+    "description": "What changes a junk removal quote in Hong Kong, including volume, weight, access, and location.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2495,7 +2495,7 @@
   {
     "path": "/guide-to-prepare-for-junk-removal-in-hong-kong/",
     "title": "Guide to Prepare for Junk Removal in Hong Kong",
-    "description": "",
+    "description": "How to prepare a Hong Kong home or office for a junk pickup, including access and what to set aside.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2504,7 +2504,7 @@
   {
     "path": "/guide-to-scheduling-junk-removal-in-hong-kong/",
     "title": "Guide to Scheduling Junk Removal in Hong Kong",
-    "description": "",
+    "description": "How to book a junk removal in Hong Kong, and what to tell the crew before the pickup.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2513,7 +2513,7 @@
   {
     "path": "/hong-kongs-relocation-regulation/",
     "title": "Hong Kong's Relocation Regulation",
-    "description": "",
+    "description": "What to check in Hong Kong before a home or office relocation, including building access.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2531,7 +2531,7 @@
   {
     "path": "/how-long-does-an-office-move-take-in-hong-kong/",
     "title": "How Long Does an Office Move Take in Hong Kong?",
-    "description": "",
+    "description": "What affects how long an office move takes in Hong Kong, from the floor area to the building rules.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2549,7 +2549,7 @@
   {
     "path": "/junk-removal-regulations-and-guidelines-in-hong-kong/",
     "title": "Junk Removal Regulations and Guidelines in Hong Kong",
-    "description": "",
+    "description": "Guidelines for junk removal in Hong Kong, and how household and office waste should be taken away.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2558,7 +2558,7 @@
   {
     "path": "/strategies-for-relocation-in-hong-kong/",
     "title": "Strategies for Relocation in Hong Kong",
-    "description": "",
+    "description": "Ways to plan a relocation in Hong Kong, including timing, packing, and booking the crew.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2567,7 +2567,7 @@
   {
     "path": "/the-top-10-office-movers-in-hong-kong/",
     "title": "The Top 10 Office Movers in Hong Kong",
-    "description": "",
+    "description": "What to compare when shortlisting office movers in Hong Kong, from building access and timing to the quote.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2576,7 +2576,7 @@
   {
     "path": "/top-10-benefits-of-junk-removal-in-hong-kong/",
     "title": "Top 10 Benefits of Junk Removal in Hong Kong",
-    "description": "",
+    "description": "Why a booked junk removal helps a Hong Kong home or office clear space and handle the waste.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2585,7 +2585,7 @@
   {
     "path": "/top-10-benefits-of-office-relocation/",
     "title": "Top 10 Benefits of Office Relocation",
-    "description": "",
+    "description": "Reasons a business moves office, and what to plan before relocation day in Hong Kong.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2594,7 +2594,7 @@
   {
     "path": "/top-10-eco-friendly-ways-for-disposing-furniture-in-hong-kong/",
     "title": "Top 10 Eco-Friendly Ways for Disposing Furniture in Hong Kong",
-    "description": "",
+    "description": "Ways to dispose of furniture in Hong Kong with less waste, including donation, recycling, and pickup.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2603,7 +2603,7 @@
   {
     "path": "/top-10-furniture-disposal-services-in-hong-kong/",
     "title": "Top 10 Furniture Disposal Services in Hong Kong",
-    "description": "",
+    "description": "What to compare in a Hong Kong furniture disposal service, from the quote to how items are handled.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2612,7 +2612,7 @@
   {
     "path": "/top-10-furniture-recycling-services-in-hong-kong/",
     "title": "Top 10 Furniture Recycling Services in Hong Kong",
-    "description": "",
+    "description": "How furniture recycling works in Hong Kong, and which pieces can be donated or collected.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2621,7 +2621,7 @@
   {
     "path": "/top-10-international-movers-in-hong-kong/",
     "title": "Top 10 International Movers in Hong Kong",
-    "description": "",
+    "description": "What to compare when choosing an international mover in Hong Kong, including packing and the quote.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2630,7 +2630,7 @@
   {
     "path": "/top-10-junk-removal-services-in-hong-kong/",
     "title": "Top 10 Junk Removal Services in Hong Kong",
-    "description": "",
+    "description": "What to compare in a Hong Kong junk removal service, including the quote, access, and disposal.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2639,7 +2639,7 @@
   {
     "path": "/top-10-key-benefits-of-office-relocation/",
     "title": "Top 10 Key Benefits of Office Relocation",
-    "description": "",
+    "description": "What a business gains from moving office, and what to settle before the relocation.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2648,7 +2648,7 @@
   {
     "path": "/top-10-tips-for-a-relocating-office-in-hong-kong/",
     "title": "Top 10 Tips for a Relocating Office in Hong Kong",
-    "description": "",
+    "description": "Tips for moving an office in Hong Kong, from the schedule and labelling to building access.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2657,7 +2657,7 @@
   {
     "path": "/top-5-places-to-donate-furniture-in-hong-kong/",
     "title": "Top 5 Places to Donate Furniture in Hong Kong",
-    "description": "",
+    "description": "Places that accept donated furniture in Hong Kong, and when to book a pickup for the rest.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2666,7 +2666,7 @@
   {
     "path": "/top-5-ways-to-sell-used-furniture-in-hong-kong/",
     "title": "Top 5 Ways to Sell Used Furniture in Hong Kong",
-    "description": "",
+    "description": "Ways to sell used furniture in Hong Kong, and what to do with pieces that do not sell.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2675,7 +2675,7 @@
   {
     "path": "/ultimate-guide-for-household-furniture-removal-in-hong-kong/",
     "title": "Ultimate Guide for Household Furniture Removal in Hong Kong",
-    "description": "",
+    "description": "How household furniture removal works in Hong Kong, from disassembly and access to the pickup.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2684,7 +2684,7 @@
   {
     "path": "/ultimate-moving-guide-for-expats-in-hong-kong/",
     "title": "Ultimate Moving Guide for Expats in Hong Kong",
-    "description": "",
+    "description": "A moving guide for expats in Hong Kong, covering packing, building access, and booking a crew.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2693,7 +2693,7 @@
   {
     "path": "/what-can-be-recycled-in-hong-kong-a-comprehensive-guide-by-speedy-move/",
     "title": "What can be Recycled in Hong Kong? A Comprehensive Guide by Speedy Move",
-    "description": "",
+    "description": "What households in Hong Kong can recycle, and which items need a separate pickup.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2702,7 +2702,7 @@
   {
     "path": "/what-is-furniture-recycling/",
     "title": "What is Furniture Recycling?",
-    "description": "",
+    "description": "What furniture recycling means, and which pieces can be repaired, donated, or collected in Hong Kong.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2720,7 +2720,7 @@
   {
     "path": "/when-to-plan-for-your-office-relocation/",
     "title": "When to Plan for Your Office Relocation?",
-    "description": "",
+    "description": "When to start planning an office relocation, from the lease date to booking the crew.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2729,7 +2729,7 @@
   {
     "path": "/where-can-i-recycle-furniture-in-hk/",
     "title": "Where Can I Recycle Furniture in HK?",
-    "description": "",
+    "description": "Where to recycle furniture in Hong Kong, and how to arrange a collection for larger pieces.",
     "seoTitle": "%title%",
     "language": "en",
     "template": "article",
@@ -2738,7 +2738,7 @@
   {
     "path": "/zh/五大香港舊傢俬回收的最佳方法/",
     "title": "五大香港舊傢俬回收的最佳方法",
-    "description": "",
+    "description": "介紹五種在香港回收舊傢俬的方法，包括捐贈、回收店及上門清運。",
     "seoTitle": "%title%",
     "language": "zh",
     "template": "article",
@@ -2747,7 +2747,7 @@
   {
     "path": "/zh/香港十大傢俬回收服務/",
     "title": "香港十大傢俬回收服務",
-    "description": "",
+    "description": "整理香港回收舊傢俬的途徑，方便你決定捐贈、回收或上門清運。",
     "seoTitle": "%title%",
     "language": "zh",
     "template": "article",
@@ -2756,7 +2756,7 @@
   {
     "path": "/zh/香港十大傢俬棄置公司/",
     "title": "香港十大傢俬棄置公司",
-    "description": "",
+    "description": "說明選擇香港傢俬棄置公司時要比較的服務範圍、報價及處理方式。",
     "seoTitle": "%title%",
     "language": "zh",
     "template": "article",
@@ -2765,7 +2765,7 @@
   {
     "path": "/zh/香港十大最大垃圾處理場/",
     "title": "香港十大最大垃圾處理場",
-    "description": "",
+    "description": "介紹香港主要的垃圾處理設施，以及家居垃圾可以怎樣安排清運。",
     "seoTitle": "%title%",
     "language": "zh",
     "template": "article",
@@ -2774,7 +2774,7 @@
   {
     "path": "/zh/香港最佳傢俬棄置收費指南/",
     "title": "香港最佳傢俬棄置收費指南",
-    "description": "",
+    "description": "說明香港傢俬棄置報價會受物件體積、樓層及地點影響，以及如何先取得報價。",
     "seoTitle": "%title%",
     "language": "zh",
     "template": "article",
@@ -2783,7 +2783,7 @@
   {
     "path": "/zh/香港最佳處理舊傢俬的7種方法/",
     "title": "香港最佳處理舊傢俬的7種方法",
-    "description": "",
+    "description": "介紹七種處理舊傢俬的方法，包括捐贈、轉售、回收及上門清運。",
     "seoTitle": "%title%",
     "language": "zh",
     "template": "article",
@@ -2792,7 +2792,7 @@
   {
     "path": "/zh/網誌/",
     "title": "網誌",
-    "description": "",
+    "description": "Speedy Move 網誌涵蓋香港垃圾清理、傢俬棄置、搬屋及回收，方便你先了解再預約。",
     "seoTitle": "%title% %sitename%",
     "language": "zh",
     "template": "company",

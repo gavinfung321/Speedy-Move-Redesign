@@ -5,6 +5,7 @@ import { GoogleCarousel } from "@/components/google-carousel";
 import { faqs } from "@/components/home-page";
 import { ImportedBody } from "@/components/imported-body";
 import { googleCardMark, googleReviewsHtml, loadGoogleReviews, reviewDateLabel } from "@/lib/gbp-reviews";
+import { languageAlternates } from "@/lib/pages";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -12,11 +13,7 @@ export const metadata: Metadata = {
   description: site.description,
   alternates: {
     canonical: "/",
-    languages: {
-      "en-HK": "/",
-      "zh-HK": "/zh/首頁/",
-      "x-default": "/",
-    },
+    languages: languageAlternates("/"),
   },
 };
 

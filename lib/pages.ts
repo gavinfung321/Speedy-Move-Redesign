@@ -1,5 +1,8 @@
+import languagePairs from "@/content/language-pairs.json";
 import pages from "@/content/pages.json";
 import { site } from "@/lib/site";
+
+const pairs = languagePairs as Record<string, string>;
 
 export type PageRecord = {
   path: string;
@@ -20,6 +23,14 @@ export function findPage(path: string): PageRecord | undefined {
 
 export function pageSlug(path: string): string[] {
   return path.split("/").filter(Boolean);
+}
+
+export function languageAlternates(path: string): Record<string, string> | undefined {
+  const other = pairs[path];
+  if (!other) return undefined;
+  const english = path.startsWith("/zh/") ? other : path;
+  const chinese = path.startsWith("/zh/") ? path : other;
+  return { "en-HK": english, "zh-HK": chinese, "x-default": english };
 }
 
 export function seoTitle(page: PageRecord): string {

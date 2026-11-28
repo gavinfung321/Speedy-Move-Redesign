@@ -1,3 +1,6 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
+
 const VOID_TAGS = new Set(["img", "br", "hr", "source"]);
 
 function topNodes(html: string): string[] {
@@ -207,6 +210,24 @@ function layoutRun(run: string[]): string {
   return layoutMiddle(run);
 }
 
+function sharedName(node: string): string {
+  return /^<div\s+data-shared="([\w-]+)"/i.exec(node.trim())?.[1] ?? "";
+}
+
+function sectionCta(name: string): string {
+  const file = path.join(process.cwd(), `content/sections/${name}.html`);
+  const html = readFileSync(file, "utf8").trim();
+  return /^<p\s+class="cta"/i.test(html) ? html : html.replace(/^<p\b/i, '<p class="cta"');
+}
+
+function insertPriceLink(html: string, link: string): string {
+  const start = html.lastIndexOf('<div class="price-layout">');
+  if (start === -1) return `${html}\n${link}`;
+  const close = html.indexOf("</div></div>", start);
+  if (close === -1) return `${html}\n${link}`;
+  return `${html.slice(0, close)}${link}${html.slice(close)}`;
+}
+
 export function layoutItemPage(html: string): string {
   const nodes = topNodes(html);
   const out: string[] = [];
@@ -228,7 +249,13 @@ export function layoutItemPage(html: string): string {
       run.push(nodes[cursor]);
       cursor += 1;
     }
-    out.push(layoutRun(run));
+    const moreFaq = run.some((node) => isTag(node, "h3")) && sharedName(nodes[cursor] ?? "") === "faq-zh";
+    const morePrice = !moreFaq && sharedName(nodes[cursor] ?? "") === "pricing-zh";
+    if (moreFaq || morePrice) cursor += 1;
+    const laid = layoutRun(run);
+    if (moreFaq) out.push(laid.replace(/<\/section>$/, `${sectionCta("faq-zh")}</section>`));
+    else if (morePrice) out.push(insertPriceLink(laid, sectionCta("pricing-zh")));
+    else out.push(laid);
   }
 
   return out.join("\n");
